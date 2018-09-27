@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Nunito+Sans" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <title>Firebase Homework</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 id="trainTimeHead">Train Schedule</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="scheduleContainer">
+                        <h3 id="scheduleContainerHead">Train Times</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="addTrainContainer">
+                        <h3 id="addTrainContainerHead">Add Train</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 text-center">
+                                    <h5 id="trainNameFormHead">Train Name</h5>
+                                    <input type="text" id="trainNameInput" placeholder="ex. Thomas the Tank Engine" name="trainNameInput">
+                                    <br>
+                                    <h5 class="mt-5" id="destinationFormHead">Destination</h5>
+                                    <input type="text" id="destinationInput" placeholder="North Carolina" name="destinationInput">
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <h5 id="frequencyFormHead">Frequency (mins)</h5>
+                                    <input type="text" id="frequencyInput" placeholder="Frequency in minutes (ex. - 45 )" name="frequencyInput">
+                                    <h5 class="mt-5" id="firstTrainTimeFormHead">Next Arrival (00:00)</h5>
+                                    <input type="time" id="trainTimeInput" placeholder="00:00" name="firstTrainTimeInput">
+                                </div>
+                                <div class="col-md-12 text-center mt-4">
+                                    <button id="submitButton" class="btn btn-default" type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+/* CONTAINER HEADS =========================================================== */
+#wrapper {
+    background-image: url("images/train2.jpg");
+    height:826px;
+}
+
+#trainTimeHead {
+    background-color:grey;
+    text-align:center;
+    font-size:40px;
+    margin-top: 30px;
+    margin-bottom:30px;
+    opacity: 1;
+    width:100%;
+    height:60px;
+    border-style: inset;
+    border-width: 5px;
+    border-color:skyblue;
+    border-radius:10px;
+    font-family:Questrial;
+}
+
+#scheduleContainerHead {
+    background-color:skyblue;
+    font-size:35px;
+    opacity: 1;
+    height:50px;
+    border-style: inset;
+    border-width: 5px;
+    border-color:skyblue;
+    border-radius:10px 10px 0px 0px;
+    padding-left: 8px;
+    padding-top:2px;
+    font-family:Questrial;
+}
+
+#addTrainContainerHead {
+    background-color:skyblue;
+    font-size:35px;
+    opacity: 1;
+    height:50px;
+    border-style: inset;
+    border-width: 5px;
+    border-color:skyblue;
+    border-radius:10px 10px 0px 0px;
+    padding-left: 8px;
+    padding-top:2px;
+    font-family:Questrial;
+}
+
+/* CONTAINERS ================================================================ */
+
+
+#addTrainContainer {
+    background-color:grey;
+    opacity: 0.9;
+    height: 320px;
+    border-style: groove;
+    border-width: 5px;
+    border-color:skyblue;
+    border-radius:10px;
+}
+
+#scheduleContainer{
+    background:grey;
+    opacity: 0.9;
+    height:300px;
+    margin-bottom:20px;
+    border-style: groove;
+    border-width: 5px;
+    border-color:skyblue;
+    border-radius:10px;
+    overflow-y: auto;
+}
+
+
+
+/* FORM INPUTS ============================================================== */
+
+
+#trainNameInput {
+    width: 300px;
+}
+
+#destinationInput {
+    width:300px;
+}
+
+#trainTimeInput {
+    width:300px;
+}
+
+#frequencyInput {
+    width:300px;
+}
+
+
+
+/* FORM HEADERS ============================================================ */
+
+
+#trainNameFormHead {
+    font-size:25px;
+    margin:auto;
+    font-family:Nunito sans;
+}
+
+#destinationFormHead {
+    font-size:25px;
+    margin:auto;
+    font-family:Nunito sans;
+}
+
+#firstTrainTimeFormHead {
+    font-size:25px;
+    margin:auto;
+    font-family:Nunito sans;
+}
+
+#frequencyFormHead {
+    font-size:25px;
+    margin:auto;
+    font-family:Nunito sans;
+}
